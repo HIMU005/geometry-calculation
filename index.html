@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-8">
+<body class="m-2">
     <header>
 
     </header>
@@ -18,7 +18,7 @@
             <!-- shape card container  -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle shape  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title mx-auto">Triangle</h2>
@@ -39,7 +39,7 @@
                     </div>
                   </div>
                   <!-- rectangle shape  -->
-                  <div class="card w-96 bg-base-100 shadow-xl">
+                  <div class="card bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title text-2xl mx-auto">Rectangle</h2>
@@ -61,7 +61,7 @@
                     </div>
                   </div>
                   <!-- parallelogram shape  -->
-                  <div class="card w-96 bg-base-100 shadow-xl">
+                  <div class="card bg-base-100 shadow-xl">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title text-2xl mx-auto">Parallelogram</h2>
@@ -83,7 +83,7 @@
                     </div>
                   </div>
                 <!-- Rhombus shape  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title mx-auto">Rhombus</h2>
@@ -104,7 +104,7 @@
                     </div>
                   </div>
                   <!-- Pentagon shape  -->
-                  <div class="card w-96 bg-base-100 shadow-xl">
+                  <div class="card bg-base-100 shadow-xl">
                     <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title text-2xl mx-auto">Pentagon</h2>
@@ -125,25 +125,25 @@
                       </div>
                     </div>
                   </div>
-                  <!-- parallelogram shape  -->
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                  <!-- Ellipse shape  -->
+                  <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title text-2xl mx-auto">Parallelogram</h2>
-                      <p class="mx-auto">Area (A) = b X h</p>
+                      <h2 class="card-title text-2xl mx-auto">Ellipse</h2>
+                      <p class="mx-auto">Area (A) = &Pi; ab</p>
                       <div>
                         <!-- Parallelogram width  -->
-                        <input id="para-b" class="w-24 p-3 rounded-lg" type="text" placeholder="Base">
+                        <input id="ellipse-a" class="w-24 p-3 rounded-lg" type="text" placeholder="a">
                         <span class="mr-12">cm</span>
                         <!-- Parallelogram length -->
-                        <input id="para-h" class="w-24 p-3 rounded-lg" type="text" placeholder="height">
+                        <input id="ellipse-b" class="w-24 p-3 rounded-lg" type="text" placeholder="b">
                         <span>cm</span>
                       </div>
                       <div>
-                        <p>Area : <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                        <p>Area : <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions justify-center">
-                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -151,8 +151,8 @@
 
             </div>
             <!-- area calculation container  -->
-            <div class="w-96 mr-0">
-                <h3 class="text-3xl">Calculation part</h3>
+            <div class="w-80 mr-0 border-2 border-red-600">
+                <h3 class="text-3xl mx-auto">Calculation part</h3>
             </div>
 
         </div>
@@ -169,5 +169,6 @@
 <script src="script/calculate-parallelogram.js"></script>
 <script src="script/calculate-rhombus.js"></script>
 <script src="script/calculate-pentagon.js"></script>
+<script src="script/calculate-ellipse.js"></script>
 </body>
 </html>
