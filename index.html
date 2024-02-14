@@ -103,25 +103,25 @@
                       </div>
                     </div>
                   </div>
-                  <!-- rectangle shape  -->
+                  <!-- Pentagon shape  -->
                   <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title text-2xl mx-auto">Rectangle</h2>
-                      <p class="mx-auto">Area (A) = w X I</p>
+                      <h2 class="card-title text-2xl mx-auto">Pentagon</h2>
+                      <p class="mx-auto">Area (A) = 0.5 X p X b</p>
                       <div>
-                        <!-- rectangle width  -->
-                        <input id="rec-w" class="w-24 p-3 rounded-lg" type="text" placeholder="width">
+                        <!-- Pentagon width  -->
+                        <input id="pen-p" class="w-24 p-3 rounded-lg" type="text" placeholder="p">
                         <span class="mr-12">cm</span>
-                        <!-- rectangle length -->
-                        <input id="rec-i" class="w-24 p-3 rounded-lg" type="text" placeholder="length">
+                        <!-- Pentagon length -->
+                        <input id="pen-b" class="w-24 p-3 rounded-lg" type="text" placeholder="b">
                         <span>cm</span>
                       </div>
                       <div>
-                        <p>Area : <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                        <p>Area : <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions justify-center">
-                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -168,5 +168,6 @@
 <script src="script/calculate-rectangle.js"></script>
 <script src="script/calculate-parallelogram.js"></script>
 <script src="script/calculate-rhombus.js"></script>
+<script src="script/calculate-pentagon.js"></script>
 </body>
 </html>
