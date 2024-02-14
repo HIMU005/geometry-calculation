@@ -46,10 +46,10 @@
                       <p class="mx-auto">Area (A) = w X I</p>
                       <div>
                         <!-- rectangle width  -->
-                        <input id="rec-w" class="w-24 p-3 rounded-lg" type="text" placeholder="w">
+                        <input id="rec-w" class="w-24 p-3 rounded-lg" type="text" placeholder="width">
                         <span class="mr-12">cm</span>
                         <!-- rectangle length -->
-                        <input id="rec-i" class="w-24 p-3 rounded-lg" type="text" placeholder="l">
+                        <input id="rec-i" class="w-24 p-3 rounded-lg" type="text" placeholder="length">
                         <span>cm</span>
                       </div>
                       <div>
@@ -60,11 +60,98 @@
                       </div>
                     </div>
                   </div>
+                  <!-- parallelogram shape  -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl mx-auto">Parallelogram</h2>
+                      <p class="mx-auto">Area (A) = b X h</p>
+                      <div>
+                        <!-- Parallelogram width  -->
+                        <input id="para-b" class="w-24 p-3 rounded-lg" type="text" placeholder="Base">
+                        <span class="mr-12">cm</span>
+                        <!-- Parallelogram length -->
+                        <input id="para-h" class="w-24 p-3 rounded-lg" type="text" placeholder="height">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p>Area : <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Rhombus shape  -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Rhombus</h2>
+                      <p class="mx-auto">Area (A) = 0.5 X d1 X d2</p>
+                      <div>
+                        <input id="rhombus-d1" class="w-24 p-3 rounded-lg" type="text" placeholder="d1">
+                        <span class="mr-12">cm</span>
+                        <input id="rhombus-d2" class="w-24 p-3 rounded-lg" type="text" placeholder="d2">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p>Area : <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
+                      <div class="card-actions justify-center">
+                        <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- rectangle shape  -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl mx-auto">Rectangle</h2>
+                      <p class="mx-auto">Area (A) = w X I</p>
+                      <div>
+                        <!-- rectangle width  -->
+                        <input id="rec-w" class="w-24 p-3 rounded-lg" type="text" placeholder="width">
+                        <span class="mr-12">cm</span>
+                        <!-- rectangle length -->
+                        <input id="rec-i" class="w-24 p-3 rounded-lg" type="text" placeholder="length">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p>Area : <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- parallelogram shape  -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl mx-auto">Parallelogram</h2>
+                      <p class="mx-auto">Area (A) = b X h</p>
+                      <div>
+                        <!-- Parallelogram width  -->
+                        <input id="para-b" class="w-24 p-3 rounded-lg" type="text" placeholder="Base">
+                        <span class="mr-12">cm</span>
+                        <!-- Parallelogram length -->
+                        <input id="para-h" class="w-24 p-3 rounded-lg" type="text" placeholder="height">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p>Area : <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
  
 
             </div>
             <!-- area calculation container  -->
-            <div class="w-96">
+            <div class="w-96 mr-0">
                 <h3 class="text-3xl">Calculation part</h3>
             </div>
 
@@ -79,5 +166,7 @@
 
 <script src="script/calculate-triangle..js"></script>
 <script src="script/calculate-rectangle.js"></script>
+<script src="script/calculate-parallelogram.js"></script>
+<script src="script/calculate-rhombus.js"></script>
 </body>
 </html>
